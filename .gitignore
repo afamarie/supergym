@@ -8,3 +8,4 @@ package-lock.json
 *.sublime*
 npm-debug.*
 Thumbs.db
+node_modules/
