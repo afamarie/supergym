@@ -1,6 +1,17 @@
 .logo {
   color: $color-default-white;
 }
+
 .logo__image {
   fill: currentcolor;
+
+  @include vp-1199 {
+    width: 80px;
+    height: 17px;
+  }
+
+  @include vp-767 {
+    width: 66px;
+    height: 24px;
+  }
 }
