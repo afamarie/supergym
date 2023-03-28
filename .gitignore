@@ -9,3 +9,4 @@ package-lock.json
 npm-debug.*
 Thumbs.db
 node_modules/
+source/
