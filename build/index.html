@@ -14,28 +14,30 @@
         <div class="container">
           <div class="header__links">
             <a class="logo" href="index.html" aria-label="SUPERGYM - главная страница">
-              <svg class="logo__image" width="122" height="44"></svg>
+              <svg class="logo__image" width="122" height="44">
+                <use xlink:href="img/sprite.svg#logo"></use>
+              </svg>
             </a>
             <a class="phone" href="tel:88005555555" aria-label="SUPERGYM - телефон">
               8-800-555-55-55
             </a>
           </div>
           <div class="header__banner">
-            <p>Омск</p>
-            <h1>Фитнес центр</h1>
             <ul class="header__list">
               <li class="header__item">Тренажёрный зал</li>
               <li class="header__item">Групповые занятия</li>
               <li class="header__item">Кардио-зона</li>
             </ul>
-            <a class="header__btn-link btn" href="#">Купить абонемент</a>
+            <div class="header__text">
+              <p>Омск</p>
+              <h1>Фитнес центр</h1>
+              <a class="header__btn-link btn" href="#">Купить абонемент</a>
+            </div>
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/banners/hero.webp, img/banners/hero@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/banners/hero-tablet.webp, img/banners/hero-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/banners/hero-mobile.webp, img/banners/hero-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/banners/hero-tablet.webp, img/banners/hero-tablet@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/banners/hero.jpg, img/banners/hero@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/banners/hero-tablet.jpg, img/banners/hero-tablet@2x.jpg 2x">
-              <img class="header__image" src="img/banners/hero-mobile.jpg" srcset="img/banners/hero-mobile@2x.jpg 2x" width="500" height="556" alt="Фитнес центр SUPERGYM">
+              <img class="header__image" src="img/banners/hero.jpg" srcset="img/banners/hero@2x.jpg 2x" width="500" height="556" alt="Фитнес центр SUPERGYM">
             </picture>
           </div>
         </div>
@@ -81,7 +83,7 @@
                       <p>5&nbsp;000</p>
                       <span></span>
                     </div>
-                    <a class="subscriptions__btn-link btn">
+                    <a class="subscriptions__btn-link btn btn--dark">
                       Купить абонемент
                     </a>
                   </li>
@@ -92,7 +94,7 @@
                       <p>1&nbsp;700</p>
                       <span></span>
                     </div>
-                    <a class="subscriptions__btn-link btn">
+                    <a class="subscriptions__btn-link btn btn--dark">
                       Купить абонемент
                     </a>
                   </li>
@@ -103,7 +105,7 @@
                       <p>2&nbsp;700</p>
                       <span></span>
                     </div>
-                    <a class="subscriptions__btn-link btn">
+                    <a class="subscriptions__btn-link btn btn--dark">
                       Купить абонемент
                     </a>
                   </li>
@@ -119,7 +121,7 @@
                       <p>15&nbsp;000</p>
                       <span></span>
                     </div>
-                    <a class="subscriptions__btn-link btn">
+                    <a class="subscriptions__btn-link btn btn--dark">
                       Купить абонемент
                     </a>
                   </li>
@@ -130,7 +132,7 @@
                       <p>5&nbsp;700</p>
                       <span></span>
                     </div>
-                    <a class="subscriptions__btn-link btn">
+                    <a class="subscriptions__btn-link btn btn--dark">
                       Купить абонемент
                     </a>
                   </li>
@@ -141,7 +143,7 @@
                       <p>8&nbsp;700</p>
                       <span></span>
                     </div>
-                    <a class="subscriptions__btn-link btn">
+                    <a class="subscriptions__btn-link btn btn--dark">
                       Купить абонемент
                     </a>
                   </li>
@@ -157,7 +159,7 @@
                       <p>25&nbsp;000</p>
                       <span></span>
                     </div>
-                    <a class="subscriptions__btn-link btn">
+                    <a class="subscriptions__btn-link btn btn--dark">
                       Купить абонемент
                     </a>
                   </li>
@@ -168,7 +170,7 @@
                       <p>8&nbsp;700</p>
                       <span></span>
                     </div>
-                    <a class="subscriptions__btn-link btn">
+                    <a class="subscriptions__btn-link btn btn--dark">
                       Купить абонемент
                     </a>
                   </li>
@@ -179,7 +181,7 @@
                       <p>13&nbsp;700</p>
                       <span></span>
                     </div>
-                    <a class="subscriptions__btn-link btn">
+                    <a class="subscriptions__btn-link btn btn--dark">
                       Купить абонемент
                     </a>
                   </li>
@@ -451,7 +453,7 @@
                   <source type="image/webp" srcset="img/banners/special-mobile.webp, img/banners/special-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/banners/special.jpg, img/banners/special@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/banners/special-tablet.jpg, img/banners/special-tablet@2x.jpg 2x">
-                  <img class="header__image" src="img/banners/special-mobile.jpg" srcset="img/banners/special-mobile@2x.jpg 2x" width="280" height="462" alt="Безлимитный абонемент">
+                  <img class="special__image" src="img/banners/special-mobile.jpg" srcset="img/banners/special-mobile@2x.jpg 2x" width="280" height="462" alt="Безлимитный абонемент">
                 </picture>
               </li>
               <li class="special__list-item special__list-item--side">
@@ -484,7 +486,7 @@
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/reviews/review-1.webp, img/reviews/review-1@2x.webp 2x">
                   <source type="image/webp" srcset="img/reviews/review-1-mobile.webp, img/reviews/review-1-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/reviews/review-1.jpg, img/reviews/review-1@2x.jpg 2x">
-                  <img class="header__image" src="img/reviews/review-1-mobile.jpg" srcset="img/reviews/review-1-mobile@2x.jpg" width="80" height="80" alt="Анна Орлова">
+                  <img class="reviews__image" src="img/reviews/review-1-mobile.jpg" srcset="img/reviews/review-1-mobile@2x.jpg" width="80" height="80" alt="Анна Орлова">
                 </picture>
                 <b>Анна Орлова</b>
                 <p>Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей</p>
@@ -494,7 +496,7 @@
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/reviews/review-1.webp, img/reviews/review-1@2x.webp 2x">
                   <source type="image/webp" srcset="img/reviews/review-1-mobile.webp, img/reviews/review-1-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/reviews/review-1.jpg, img/reviews/review-1@2x.jpg 2x">
-                  <img class="header__image" src="img/reviews/review-1-mobile.jpg" srcset="img/reviews/review-1-mobile@2x.jpg" width="80" height="80" alt="Анна Орлова">
+                  <img class="reviews__image" src="img/reviews/review-1-mobile.jpg" srcset="img/reviews/review-1-mobile@2x.jpg" width="80" height="80" alt="Анна Орлова">
                 </picture>
                 <b>Анна Орлова</b>
                 <p>Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей</p>
@@ -504,7 +506,7 @@
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/reviews/review-1.webp, img/reviews/review-1@2x.webp 2x">
                   <source type="image/webp" srcset="img/reviews/review-1-mobile.webp, img/reviews/review-1-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/reviews/review-1.jpg, img/reviews/review-1@2x.jpg 2x">
-                  <img class="header__image" src="img/reviews/review-1-mobile.jpg" srcset="img/reviews/review-1-mobile@2x.jpg" width="80" height="80" alt="Анна Орлова">
+                  <img class="reviews__image" src="img/reviews/review-1-mobile.jpg" srcset="img/reviews/review-1-mobile@2x.jpg" width="80" height="80" alt="Анна Орлова">
                 </picture>
                 <b>Анна Орлова</b>
                 <p>Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей</p>
@@ -547,26 +549,30 @@
       </main>
       <footer class="footer">
         <div class="container">
-          <a class="logo" href="index.html" aria-label="SUPERGYM - главная страница">
-            <svg class="logo__image" width="122" height="44"></svg>
-          </a>
-          <ul class="footer__site-list">
-            <li class="footer__site-list-item">
-              <a class="footer__site-link" href="#">Услуги</a>
-            </li>
+          <div class="footer__wrapper">
+            <a class="logo" href="index.html" aria-label="SUPERGYM - главная страница">
+              <svg class="logo__image" width="88" height="32">
+                <use xlink:href="img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <ul class="footer__site-list">
               <li class="footer__site-list-item">
-              <a class="footer__site-link" href="#">Абонементы</a>
-            </li>
-              <li class="footer__site-list-item">
-              <a class="footer__site-link" href="#">Акции</a>
-            </li>
-              <li class="footer__site-list-item">
-              <a class="footer__site-link" href="#">Тренеры</a>
-            </li>
-              <li class="footer__site-list-item">
-              <a class="footer__site-link" href="#">Расписание</a>
-            </li>
-          </ul>
+                <a class="footer__site-link" href="#">Услуги</a>
+              </li>
+                <li class="footer__site-list-item">
+                <a class="footer__site-link" href="#">Абонементы</a>
+              </li>
+                <li class="footer__site-list-item">
+                <a class="footer__site-link" href="#">Акции</a>
+              </li>
+                <li class="footer__site-list-item">
+                <a class="footer__site-link" href="#">Тренеры</a>
+              </li>
+                <li class="footer__site-list-item">
+                <a class="footer__site-link" href="#">Расписание</a>
+              </li>
+            </ul>
+          </div>
           <ul class="footer__social-list">
             <li class="footer__social-list-item">
               <a class="footer__social-link" href="#">
@@ -585,7 +591,7 @@
               </a>
             </li>
             <li class="footer__social-list-item">
-              <a class="social-list__link" href="#">
+              <a class="footer__social-link" href="#">
                 <svg class="footer__social-icon" width="25" height="25">
                   <use xlink:href="img/sprite.svg#reddit"></use>
                 </svg>

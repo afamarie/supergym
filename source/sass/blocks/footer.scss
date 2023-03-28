@@ -1,16 +1,55 @@
 .footer {
+  background-color: $color-black-russian;
+  color: $color-default-white;
 }
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+
+  @include vp-767 {
+    display: block;
+    columns: 2;
+  }
+}
+
 .footer__site-list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  @include vp-767 {
+  }
 }
+
 .footer__site-list-item {
+  @include vp-767 {
+    width: 50%;
+  }
 }
+
 .footer__site-link {
 }
+
 .footer__social-list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  gap: 11px;
+  justify-content: flex-end;
 }
+
 .footer__social-list-item {
 }
+
 .footer__social-link {
 }
+
 .footer__social-icon {
+  fill: currentcolor;
 }
