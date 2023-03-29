@@ -1,16 +1,88 @@
 .subscriptions {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: $color-ghost-white;
+
+  h2 {
+    margin: 0;
+    font-family: $ff-highlight;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
 }
-.subscriptions__tabs-list {
+
+.subscriptions__tabs-controls {
+  display: flex;
+  margin: 0 auto;
+  width: fit-content;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: -2px -4px 0 -2px rgba($color-light-slates-grey, 0.2) inset;
+  gap: 46px;
 }
-.subscriptions__tabs-item {
-}
-.subscriptions__tabs-item--active {
-}
+
 .subscriptions__tabs-btn {
+  padding: 18px 0 12px;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  border: none;
+  box-shadow: none;
+  transition: box-shadow $trans-default;
+
+  &.is-active {
+    box-shadow: -2px -4px 0 -2px $color-crimson inset;
+  }
 }
+
+.subscriptions__tabs-list {
+  margin: 0;
+  padding-left: 0;
+  margin-top: 40px;
+  list-style: none;
+}
+
+.subscriptions__tabs-item {
+  width: 100%;
+}
+
 .subscriptions__tabs-content {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  list-style: none;
 }
+
 .subscriptions__tabs-option {
+  position: relative;
+  padding: 68px 77px;
+  width: calc(100% - 14px);
+  height: calc(100% - 14px);
+  background-color: $color-default-white;
+
+  &::before {
+    position: absolute;
+    display: flex;
+    width: calc(100% + 14px);
+    height: calc(100% + 14px);
+    top: -7px;
+    right: -7px;
+    content: "";
+    background: $color-default-white;
+    z-index: -1;
+  }
+
+  @include hover-focus {
+    &::before {
+      background: linear-gradient(125deg, $color-torch-red 12%, $color-cobalt 80%);
+    }
+  }
 }
 .subscriptions__tabs-price {
 }
