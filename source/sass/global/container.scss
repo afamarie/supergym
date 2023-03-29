@@ -13,6 +13,43 @@
   }
 }
 
+.intro .container {
+  display: grid;
+  grid-template-columns: 415px 2fr;
+  gap: 22px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-image: image-set(
+    url("../img/backgrounds/gym.webp") 1x,
+    url("../img/backgrounds/gym@2x.webp") 2x,
+    url("../img/backgrounds/gym.jpg") 1x,
+    url("../img/backgrounds/gym@2x.jpg") 2x
+  );
+
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+    background-position: center bottom;
+    background-image: image-set(
+      url("../img/backgrounds/gym-tablet.webp") 1x,
+      url("../img/backgrounds/gym-tablet@2x.webp") 2x,
+      url("../img/backgrounds/gym-tablet.jpg") 1x,
+      url("../img/backgrounds/gym-tablet@2x.jpg") 2x
+    );
+  }
+
+  @include vp-767 {
+    align-items: center;
+    background-position: center 57%;
+    background-image: image-set(
+      url("../img/backgrounds/gym-mobile.webp") 1x,
+      url("../img/backgrounds/gym-mobile@2x.webp") 2x,
+      url("../img/backgrounds/gym-mobile.jpg") 1x,
+      url("../img/backgrounds/gym-mobile@2x.jpg") 2x
+    );
+  }
+}
+
 .footer .container {
   display: flex;
   justify-content: space-between;
