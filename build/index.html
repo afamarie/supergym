@@ -51,13 +51,23 @@
               <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
               <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
             </div>
-            <div class="intro__video-wrapper">
-              <iframe class="intro__video" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube видео" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
-              <button class="intro__video-btn" type="button" aria-label="включить видео">
-                <svg class="intro__video-icon" width="17" height="17">
-                  <use xlink:href="img/sprite.svg#play"></use>
-                </svg>
-              </button>
+            <div class="intro__media">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/interior/gym.webp, img/interior/gym@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/interior/gym-tablet.webp, img/interior/gym-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/interior/gym-mobile.webp, img/interior/gym-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/interior/gym.jpg, img/interior/gym@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/interior/gym-tablet.jpg, img//interior/gym-tablet@2x.jpg 2x">
+                <img class="intro__image" src="img/interior/gym-mobile.jpg" srcset="img/interior/gym-mobile@2x.jpg 2x" width="660" height="401" alt="Интерьер и тренажеры">
+              </picture>
+              <div class="intro__video-wrapper">
+                <iframe class="intro__video" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube видео" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                <button class="intro__video-btn" type="button" aria-label="включить видео">
+                  <svg class="intro__video-icon" width="17" height="17">
+                    <use xlink:href="img/sprite.svg#play"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </section>

@@ -34,13 +34,14 @@
   gap: 16px;
 
   @include vp-1199 {
+    width: 100%;
     gap: 22px;
   }
 
   @include vp-767 {
     position: relative;
     padding-bottom: 62px;
-    grid-template-columns: max-content min-content;
+    grid-template-columns: 33% 67%;
     justify-content: center;
     gap: 0;
   }
@@ -64,8 +65,11 @@
 
   @include vp-767 {
     padding-bottom: 55px;
-    margin-right: -13px;
   }
+}
+
+.header__item {
+  width: 113px;
 }
 
 .header__text {
@@ -152,14 +156,14 @@
 .header__image {
   margin-top: -30px;
   padding-left: 50px;
-  width: clamp(100%, 36vw, 500px);
+  width: clamp(324px, 41vw, 550px);
   object-fit: cover;
 
   @include vp-1199 {
     margin-top: 0;
     padding-top: 17px;
     padding-left: 8px;
-    width: clamp(100%, 42vw, 324px);
+    width: clamp(333px, 42vw, 500px);
   }
 
   @include vp-767 {
