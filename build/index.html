@@ -62,13 +62,17 @@
           </div>
         </section>
         <section class="subscriptions">
-          <div class="container">
+          <div class="container" data-tabs="parent">
             <h2>
               Абонементы
             </h2>
-            <ul class="subscriptions__tabs-list">
-              <li class="subscriptions__tabs-item subscriptions__tabs-item--active">
-                <h3 class="subscriptions__tabs-btn">1&nbsp;месяц</h3>
+            <div class="subscriptions__tabs-controls" data-tabs="controls">
+              <button class="subscriptions__tabs-btn" data-tabs="control">1&nbsp;месяц</button>
+              <button class="subscriptions__tabs-btn" data-tabs="control">6&nbsp;месяцев</button>
+              <button class="subscriptions__tabs-btn" data-tabs="control">12&nbsp;месяцев</button>
+            </div>
+            <ul class="subscriptions__tabs-list" data-tabs="content">
+              <li class="subscriptions__tabs-item" data-tabs="element">
                 <ul class="subscriptions__tabs-content">
                   <li class="subscriptions__tabs-option">
                     <b>С&nbsp;тренером</b>
@@ -105,8 +109,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="subscriptions__tabs-item">
-                <h3 class="subscriptions__tabs-btn">6&nbsp;месяцев</h3>
+              <li class="subscriptions__tabs-item" data-tabs="element">
                 <ul class="subscriptions__tabs-content">
                   <li class="subscriptions__tabs-option">
                     <b>С&nbsp;тренером</b>
@@ -143,8 +146,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="subscriptions__tabs-item">
-                <h3 class="subscriptions__tabs-btn">12&nbsp;месяцев</h3>
+              <li class="subscriptions__tabs-item" data-tabs="element">
                 <ul class="subscriptions__tabs-content">
                   <li class="subscriptions__tabs-option">
                     <b>С&nbsp;тренером</b>
