@@ -1,10 +1,12 @@
 .btn {
   display: inline-flex;
-  padding: 19px 56px;
+  padding: 19px 44px;
+  min-width: 230px;
 
+  background-size: 250%;
+  background-position: 100% 100%;
   color: $color-default-white;
 
-  background-color: transparent;
   border: 4px solid $color-default-white;
   cursor: pointer;
 
@@ -17,7 +19,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
-  transition: opacity $trans-default;
+  transition: all $trans-600;
 
   &:disabled {
     opacity: 0.5;
@@ -26,25 +28,39 @@
   }
 
   @include hover-focus {
-    opacity: 0.8;
-    background: linear-gradient(97.05deg, #003eb7 17.6%, #ed0233 95.31%);
+    background-position: 0 0;
+    background-image: linear-gradient(97.05deg, #003eb7 5.6%, #ed0233 40.31%, transparent 55%);
   }
 
   &--dark {
+    padding: 26px 44px;
+    min-width: 206px;
+    border: none;
     color: $color-sapphire;
-    border: 4px solid $color-sapphire;
+    box-shadow: 0 0 0 2px $color-sapphire inset;
 
     @include hover-focus {
+      padding: 26px 44px;
       color: $color-default-white;
-      border-color: transparent;
-      border-left: none;
-      border-right: none;
-      padding: 10px 24px;
-      background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+      box-shadow: none;
+      background-position: 0 0;
+      background-image: linear-gradient(97.05deg, #ed0233 5.6%, #003eb7 40.31%, transparent 55%);
     }
   }
 
   @include vp-1199 {
     padding: 20px 30px;
+    min-width: 183px;
+
+    &--dark {
+      padding: 27px 45px;
+    }
+  }
+
+  @include vp-767 {
+    &--dark {
+      padding: 27px 40px;
+      min-width: 206px;
+    }
   }
 }
