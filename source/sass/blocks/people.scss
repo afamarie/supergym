@@ -1,14 +1,156 @@
 .people {
+  padding-top: 106px;
+  padding-bottom: 133px;
+
+  h2 {
+    margin: 0;
+    padding-bottom: 48px;
+    font-family: $ff-highlight;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.03em;
+  }
+
+  @include vp-1199 {
+    padding-top: 100px;
+
+    h2 {
+      padding-bottom: 30px;
+      padding-right: 5px;
+      font-size: 42px;
+      line-height: 50px;
+      text-align: center;
+    }
+  }
+
+  @include vp-767 {
+    padding-top: 65px;
+
+    h2 {
+      padding-bottom: 42px;
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
 }
+
 .people__list {
+  display: grid;
+  margin: 0 auto;
+  padding: 0;
+  grid-auto-flow: column;
+  gap: 40px;
+  list-style: none;
+  justify-content: center;
+
+  &--no-js {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(4, minmax(226px, 268px));
+  }
+
+  @include vp-1199 {
+    gap: 30px;
+
+    &--no-js {
+      grid-template-columns: repeat(2, minmax(268px, 34.9vw));
+    }
+  }
+
+  @include vp-767 {
+    &--no-js {
+      grid-template-columns: 70.6vw;
+    }
+  }
 }
+
 .people__card {
+  position: relative;
 }
+
 .people__image {
+  width: 100%;
+  object-fit: contain;
 }
+
 .people__info {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  padding: 53px 48px 22px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  color: $color-default-white;
+  background-color: transparent;
+  justify-content: flex-end;
+  transition: background-color $trans-default;
+
+  h3 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: $color-default-white;
+    order: 3;
+  }
+
+  p {
+    margin: 0;
+    height: 0;
+    visibility: collapse;
+  }
+
+  .people__card:hover &,
+  .people__card:focus & {
+    justify-content: flex-start;
+    background-color: rgba($color-sapphire, 0.9);
+
+    h3 {
+      order: 1;
+    }
+
+    p {
+      padding-bottom: 35px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1;
+      height: fit-content;
+      visibility: visible;
+      color: rgba($color-ghost-white, 0.8);
+      text-align: center;
+      order: 2;
+    }
+  }
+
+  @include vp-767 {
+    padding: 43px 30px 22px;
+  }
 }
+
 .people__details-list {
+  margin: 0;
+  height: 0;
+  visibility: collapse;
+  overflow-y: auto;
+
+  .people__card:hover &,
+  .people__card:focus & {
+    padding-left: 20px;
+    height: fit-content;
+    list-style: disc;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    visibility: visible;
+    order: 3;
+  }
 }
+
 .people__details-item {
+  & + & {
+    padding-top: 14px;
+  }
 }
