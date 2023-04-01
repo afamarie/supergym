@@ -1,6 +1,6 @@
 .advantages {
   padding-top: 103px;
-  padding-bottom: 133px;
+  padding-bottom: 125px;
   background: $color-ghost-white;
 
   h2 {
@@ -16,10 +16,23 @@
 
   @include vp-1199 {
     padding-top: 92px;
+    padding-bottom: 90px;
 
     h2 {
+      padding-bottom: 40px;
       font-size: 42px;
       line-height: 50px;
+    }
+  }
+
+  @include vp-767 {
+    padding-top: 65px;
+    padding-bottom: 65px;
+
+    h2 {
+      padding-bottom: 47px;
+      font-size: 32px;
+      line-height: 38px;
     }
   }
 }
@@ -36,13 +49,20 @@
   @include vp-1199 {
     padding: 0;
     grid-template-columns: 1fr 1fr;
-    gap: 50px 60px;
+    gap: 43px 30px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 -15px;
+    gap: 40px;
   }
 }
 
 .advantages__list-item {
   display: grid;
-  gap: 0 30px;
+  gap: 7px 30px;
 
   h3 {
     margin: 0;
@@ -56,7 +76,7 @@
     margin: 0;
     font-weight: 300;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 1;
   }
 
   &--center {
@@ -101,6 +121,8 @@
   }
 
   @include vp-1199 {
+    gap: 0 30px;
+
     h3 {
       font-size: 20px;
       line-height: 30px;
@@ -112,14 +134,43 @@
     }
 
     &--center {
+      padding: 35px 130px 41px;
+      width: clamp(320px, 57.6vw, 600px);
       grid-column: 1/-1;
       grid-row: 2/3;
+      justify-self: center;
+      gap: 15px;
     }
 
     &--side:not(:first-of-type):not(:nth-child(2)) {
       &::after {
         display: none;
       }
+    }
+  }
+
+  @include vp-767 {
+    gap: 6px;
+
+    h3 {
+      line-height: 24px;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    &--side {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 46px;
+    }
+
+    &--center {
+      margin-top: 4px;
+      margin-bottom: 6px;
+      padding: 41px 74px 45px;
     }
   }
 }
@@ -161,9 +212,36 @@
   }
 
   @include vp-1199 {
+    &--center > b {
+      font-size: 74px;
+      line-height: 67px;
+    }
+
+    &--center > p {
+      padding-top: 0;
+      padding-bottom: 6px;
+      font-size: 22px;
+      line-height: 33px;
+    }
+
     &--side > b {
       font-size: 58px;
-      line-height: 87px;
+      line-height: 1;
+    }
+  }
+
+  @include vp-767 {
+    p {
+      text-align: center;
+    }
+
+    &--center > p {
+      font-size: 22px;
+      line-height: 30px;
+    }
+
+    &--side > b {
+      line-height: 50px;
     }
   }
 }
