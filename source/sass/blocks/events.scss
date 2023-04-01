@@ -15,8 +15,18 @@
   grid-template-columns: max-content 1fr;
   background-color: $color-torch-red;
 
+  img {
+    height: 100%;
+    object-fit: contain;
+  }
+
   @include vp-767 {
     grid-template-columns: 1fr;
+
+    img {
+      height: fit-content;
+      width: 100%;
+    }
   }
 }
 
@@ -156,15 +166,5 @@
     font-size: 10px;
     line-height: 1;
     border-width: 2px;
-  }
-}
-
-.events__banner-image {
-  height: 100%;
-  object-fit: contain;
-
-  @include vp-767 {
-    height: fit-content;
-    width: 100%;
   }
 }

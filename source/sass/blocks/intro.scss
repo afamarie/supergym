@@ -89,30 +89,30 @@
   position: relative;
   padding-top: 148px;
 
+  img {
+    margin-right: -103px;
+    width: clamp(320px, 56vw, 765px);
+    object-fit: contain;
+  }
+
   @include vp-1199 {
     padding-top: 35px;
+
+    img {
+      margin-right: 0;
+      width: 100%;
+    }
   }
 
   @include vp-767 {
     margin: 0 -15px;
     padding-top: 25px;
     width: calc(100% + 30px);
-  }
-}
 
-.intro__image {
-  margin-right: -103px;
-  width: clamp(320px, 56vw, 765px);
-  object-fit: contain;
-
-  @include vp-1199 {
-    margin-right: 0;
-    width: 100%;
-  }
-
-  @include vp-767 {
-    padding-bottom: 40px;
-    width: 100vw;
+    img {
+      padding-bottom: 40px;
+      width: 100vw;
+    }
   }
 }
 
