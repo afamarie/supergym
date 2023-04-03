@@ -4,14 +4,7 @@
   background: $color-ghost-white;
 
   h2 {
-    margin: 0;
     padding-bottom: 42px;
-    font-family: $ff-highlight;
-    font-weight: 600;
-    font-size: 54px;
-    line-height: 65px;
-    letter-spacing: 0.03em;
-    text-align: center;
   }
 
   @include vp-1199 {
@@ -20,8 +13,6 @@
 
     h2 {
       padding-bottom: 40px;
-      font-size: 42px;
-      line-height: 50px;
     }
   }
 
@@ -31,8 +22,6 @@
 
     h2 {
       padding-bottom: 47px;
-      font-size: 32px;
-      line-height: 38px;
     }
   }
 }
