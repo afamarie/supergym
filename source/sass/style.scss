@@ -1,9 +1,8 @@
 // Vendor
 // ---------------------------------
 
-@import "vendor/normalize";
-// Swiper 7.4.1
-// @import "vendor/swiper";
+@import "./vendor/normalize";
+@import "./vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -19,20 +18,21 @@
 // ---------------------------------
 
 @import "blocks/btn";
-@import "blocks/custom-input.scss";
-@import "blocks/logo.scss";
-@import "blocks/advantages.scss";
-@import "blocks/contacts.scss";
-@import "blocks/events.scss";
-@import "blocks/footer.scss";
-@import "blocks/header.scss";
-@import "blocks/intro.scss";
-@import "blocks/people.scss";
-@import "blocks/phone.scss";
-@import "blocks/reviews.scss";
-@import "blocks/special.scss";
-@import "blocks/subscriptions.scss";
-@import "blocks/data-tabs.scss";
+@import "blocks/custom-input";
+@import "blocks/logo";
+@import "blocks/advantages";
+@import "blocks/contacts";
+@import "blocks/events";
+@import "blocks/footer";
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/people";
+@import "blocks/phone";
+@import "blocks/reviews";
+@import "blocks/special";
+@import "blocks/subscriptions";
+@import "blocks/data-tabs";
+@import "blocks/swiper-custom"
 
 
 // ---------------------------------
