@@ -1,5 +1,16 @@
 .logo {
   color: $color-default-white;
+
+  .footer & {
+    padding-top: 15px;
+  }
+
+  @include vp-1199 {
+    .footer & {
+      padding-right: 20px;
+      padding-top: 6px;
+    }
+  }
 }
 
 .logo__image {

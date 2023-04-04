@@ -1,35 +1,36 @@
 .people {
   padding-top: 106px;
-  padding-bottom: 135px;
+  padding-bottom: 115px;
 
   h2 {
-    padding-bottom: 48px;
+    padding-bottom: 32px;
+    padding-left: 2px;
     text-align: left;
   }
 
   @include vp-1199 {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 85px;
 
     h2 {
-      padding-bottom: 30px;
+      padding-right: 7px;
+      padding-bottom: 15px;
       text-align: center;
     }
   }
 
   @include vp-767 {
     padding-top: 65px;
-    padding-bottom: 70px;
+    padding-bottom: 53px;
 
     h2 {
-      padding-bottom: 42px;
+      padding-bottom: 25px;
     }
   }
 }
 
 .people__list {
   display: grid;
-  margin: 0 0 0 20px;
   padding: 0;
   grid-auto-flow: column;
   list-style: none;
@@ -49,8 +50,6 @@
   }
 
   @include vp-1199 {
-    margin-left: 15px;
-
     .swiper--no-js & {
       padding-left: 45px;
       padding-right: 45px;
@@ -66,22 +65,12 @@
   }
 }
 
-.people__card {
-  @include vp-1199 {
-    max-width: 35vw;
-  }
-
-  @include vp-767 {
-    max-width: 70.6vw;
-  }
-}
-
 .people__info {
   position: absolute;
   display: flex;
   height: 100%;
   flex-direction: column;
-  padding: 53px 48px 22px;
+  padding: 52px 48px 22px;
   width: 100%;
   bottom: 0;
   left: 0;
@@ -158,16 +147,15 @@
   }
 }
 
-.people .swiper:not(.swiper--no-js) {
+.people .swiper {
   margin: 0 auto;
   padding: 0 63px;
   box-sizing: content-box;
   max-width: 1160px;
 
   @include vp-1199 {
-    margin-left: 45px;
-    margin-right: 45px;
-    padding: 0 40px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
   @include vp-767 {

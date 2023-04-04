@@ -1,5 +1,18 @@
 .special {
   padding-top: 107px;
+
+  @include vp-1199 {
+    padding-top: 93px;
+
+    h2 {
+      padding-right: 7px;
+      padding-bottom: 5px;
+    }
+  }
+
+  @include vp-767 {
+    padding-top: 62px;
+  }
 }
 
 .special__list {
@@ -16,6 +29,7 @@
   }
 
   @include vp-767 {
+    padding-top: 37px;
     grid-template-columns: 1fr;
   }
 }
@@ -177,12 +191,21 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   border-bottom: 1px solid;
+  transition: color $trans-default;
 
   .special__list-item--highlight & {
     font-size: 14px;
+
+    @include hover-focus {
+      color: $color-black-russian;
+    }
   }
 
   .special__list-item--side & {
     font-size: 12px;
+
+    @include hover-focus {
+      color: $color-venetian-red;
+    }
   }
 }
