@@ -1,6 +1,14 @@
 .footer {
   background-color: $color-black-russian;
   color: $color-default-white;
+
+  a {
+    transition: color $trans-default;
+
+    @include hover-focus {
+      color: $color-torch-red;
+    }
+  }
 }
 
 .footer__wrapper {

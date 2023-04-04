@@ -116,6 +116,14 @@
     line-height: 21px;
   }
 
+  a {
+    transition: color $trans-default;
+
+    @include hover-focus {
+      color: $color-venetian-red;
+    }
+  }
+
   dd:not(:last-child) {
     padding-bottom: 30px;
   }

@@ -57,3 +57,7 @@
 .swiper--no-js .swiper-button-next {
   display: none;
 }
+
+.swiper-slide-prev {
+  visibility: collapse;
+}
