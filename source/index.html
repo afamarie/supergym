@@ -61,7 +61,7 @@
                 <img src="img/interior/gym-mobile.jpg" srcset="img/interior/gym-mobile@2x.jpg 2x" width="660" height="401" alt="Интерьер и тренажеры">
               </picture>
               <div class="intro__video-wrapper">
-                <iframe class="intro__video" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube видео" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="intro__video" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube видео" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <button class="intro__video-btn" type="button" aria-label="включить видео">
                   <svg class="intro__video-icon" width="17" height="17">
                     <use xlink:href="img/sprite.svg#play"></use>
@@ -565,33 +565,37 @@
         <section class="contacts" data-form-validate>
           <div class="container">
             <h2 class="visually-hidden">Контакты SUPERGYM</h2>
-            <h3>Бесплатное занятие</h3>
-            <form class="contacts__form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
-              <div class="custom-input" data-validate-type="text" data-on-input-validate data-required>
-                <label for="name">Имя</label>
-                <input type="text" name="name" id="name" required>
-              </div>
-              <div class="custom-input" data-validate-type="phone" data-on-input-validate data-required>
-                <label for="phone">Телефон</label>
-                <input type="tel" name="phone" id="phone" required>
-              </div>
-              <button class="contacts__form-btn btn" type="submit">Oтправить</button>
-            </form>
-            <h3>Контакты</h3>
-            <address class="contacts__address">
-              <dl class="contacts__address-hours">
-                <dt>Адрес:</dt>
-                <dd>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</dd>
-                <dt>График работы:</dt>
-                <dd>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</dd>
-              </dl>
-              <dl class="contacts__phone-email">
-                <dt>Телефон:</dt>
-                <dd><a href="tel:88005555555">8-800-555-55-55</a></dd>
-                <dt>Email:</dt>
-                <dd><a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a></dd>
-              </dl>
-            </address>
+            <article class="contacts__action">
+              <h3>Бесплатное занятие</h3>
+              <form class="contacts__form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+                <div class="custom-input" data-validate-type="text" data-on-input-validate data-required>
+                  <label for="name">Имя</label>
+                  <input type="text" name="name" id="name" required>
+                </div>
+                <div class="custom-input" data-validate-type="phone" data-on-input-validate data-required>
+                  <label for="phone">Телефон</label>
+                  <input type="tel" name="phone" id="phone" required>
+                </div>
+                <button class="contacts__form-btn btn" type="submit">Oтправить</button>
+              </form>
+            </article>
+            <article class="contacts__address">
+              <h3>Контакты</h3>
+              <address class="contacts__address-info">
+                <dl class="contacts__address-hours">
+                  <dt>Адрес:</dt>
+                  <dd>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</dd>
+                  <dt>График работы:</dt>
+                  <dd>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</dd>
+                </dl>
+                <dl class="contacts__phone-email">
+                  <dt>Телефон:</dt>
+                  <dd><a href="tel:88005555555">8-800-555-55-55</a></dd>
+                  <dt>Email:</dt>
+                  <dd><a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a></dd>
+                </dl>
+              </address>
+            </article>
           </div>
         </section>
       </main>

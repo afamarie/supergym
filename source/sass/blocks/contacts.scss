@@ -1,18 +1,43 @@
 .contacts {
+  background: linear-gradient(90deg, $color-sapphire 50%, $color-default-white 50%);
+  background-position: center center;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-style: normal;
+    font-family: $ff-highlight;
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 84px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
 }
-.container {
+
+.contacts__action {
+  color: $color-default-white;
+  background-color: $color-sapphire;
 }
-.visually-hidden {
-}
-.contacts__form {
-}
-.custom-input {
-}
-.contacts__form-btn {
-}
+
 .contacts__address {
 }
+
+.contacts__form {
+}
+
+.custom-input {
+}
+
+.contacts__form-btn {
+  background-color: transparent;
+}
+
+.contacts__address-info {
+}
+
 .contacts__address-hours {
 }
+
 .contacts__phone-email {
 }
