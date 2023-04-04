@@ -1,6 +1,7 @@
 .contacts {
   background: linear-gradient(90deg, $color-sapphire 50%, $color-default-white 50%);
-  background-position: center center;
+  background-position: center;
+  border-top: 1px solid $color-light-slates-grey;
 
   h3 {
     margin-top: 0;
@@ -13,33 +14,86 @@
     text-align: center;
     letter-spacing: 0.03em;
   }
+
+  @include vp-1199 {
+    background: initial;
+
+    h3 {
+      text-align: left;
+    }
+  }
 }
 
 .contacts__action {
   padding: 56px 170px 70px 0;
   color: $color-default-white;
   background-color: $color-sapphire;
+
+  @include vp-1199 {
+    padding: 70px 163px 70px 133px;
+  }
 }
 
 .contacts__address {
   padding: 56px 0 70px 120px;
+
+  @include vp-1199 {
+    padding: 70px 163px 70px 133px;
+  }
 }
 
 .contacts__form {
-}
-
-.custom-input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .contacts__form-btn {
   background-color: transparent;
+  flex: 1 0 100%;
 }
 
 .contacts__address-info {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(max-content, 170px));
+  font-style: normal;
+
+  dt {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  dd {
+    margin-left: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  dd:not(:last-child) {
+    padding-bottom: 30px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
 }
 
 .contacts__address-hours {
+  padding-right: 60px;
+  border-right: 1px solid $color-light-slates-grey;
+
+  @include vp-767 {
+    padding-right: 0;
+    border-right: none;
+  }
 }
 
 .contacts__phone-email {
+  padding-left: 60px;
+
+  @include vp-767 {
+    padding-left: 0;
+  }
 }

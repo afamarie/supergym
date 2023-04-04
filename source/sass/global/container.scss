@@ -52,6 +52,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
+
+  @include vp-1199 {
+    padding-left: 0;
+    padding-right: 0;
+    grid-template-columns: 1fr;
+  }
 }
 
 .footer .container {
