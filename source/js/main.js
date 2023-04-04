@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {Tabs} from './modules/tabs/tabs';
-import {swiperPeople, swiperReviews} from './modules/sliders/sliders'
+import './modules/sliders/sliders'
 
 // ---------------------------------
 
@@ -23,8 +23,6 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     const tabs = new Tabs();
     window.tabs = tabs;
-    swiperPeople();
-    swiperReviews();
   });
 });
 

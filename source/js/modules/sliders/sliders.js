@@ -1,9 +1,7 @@
 import '../../vendor/swiper-bundle.min';
-import Swiper, { Navigation } from '../../vendor/swiper-bundle.min';
+import Swiper from '../../vendor/swiper-bundle.min';
 
 const swipers = document.querySelectorAll('.swiper');
-
-console.log('lsls')
 
 swipers.forEach((swiper) => {
   swiper.classList.remove('swiper--no-js');

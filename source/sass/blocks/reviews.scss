@@ -5,59 +5,113 @@
 
 .reviews__list {
   display: grid;
-  margin: 0;
+  margin-top: 37px;
   padding-left: 0;
   grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
 
   .swiper--no-js & {
     padding: 0;
-    gap: 30;
+    gap: 30px;
+    justify-items: center;
+
+    @include vp-1199 {
+      grid-template-columns: 1fr;
+    }
   }
 }
 
 .reviews__list-item {
-  padding: 62px;
+  position: relative;
+  padding: 55px 35px;
   max-width: 560px;
+  grid-auto-rows: min-content;
   background-color: $color-resolution-blue;
   color: $color-default-white;
 
   img {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 62px;
+    top: 62px;
     border-radius: 50%;
   }
 
+  b {
+    padding-left: 135px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  p {
+    margin: 0;
+    padding-top: 15px;
+    padding-left: 135px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
   @include vp-1199 {
+    padding: 57px 37px 57px;
     max-width: 566px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    padding: 40px 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img {
+      position: static;
+      width: 68px;
+      height: 68px;
+    }
+
+    b {
+      padding-top: 10px;
+      padding-left: 15px;
+      width: min-content;
+      flex-shrink: 1;
+    }
+
+    p {
+      padding-left: 0;
+      text-align: center;
+    }
   }
 }
 
 .reviews .swiper:not(.swiper--no-js) {
-  padding-left: 62px;
-  padding-right: 62px;
+  padding-left: 60px;
+  padding-right: 60px;
   width: clamp(320px, 49.2vw, 680px);
 
   @include vp-1199 {
     padding-left: 56px;
     padding-right: 56px;
-    width: clamp(320px, 90vw, 700px);
+    width: clamp(320px, 88vw, 680px);
   }
 
   @include vp-767 {
-    padding-left: clamp(32px, 10vw, 56px);
-    padding-right: clamp(32px, 10vw, 56px);
-    width: clamp(290px, 90.63vw, 700px);
+    padding-left: clamp(32px, 10vw, 54px);
+    padding-right: clamp(32px, 10vw, 54px);
+    width: clamp(290px, 91vw, 680px);
   }
 }
 
 .reviews .swiper-button-prev,
 .reviews .swiper-button-next {
-  width: 64px;
+  width: 60px;
 
   @include vp-1199 {
     width: 56px;
   }
 
   @include vp-1199 {
-    width: clamp(34px, 11vw, 56px);
+    width: clamp(32px, 10vw, 54px);
   }
 }

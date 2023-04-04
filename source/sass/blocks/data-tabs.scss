@@ -22,7 +22,7 @@
   position: relative;
 }
 
-[data-tabs="element"] {
+[data-tabs="parent"] [data-tabs="element"] {
   position: absolute;
 
   visibility: hidden;
@@ -44,4 +44,16 @@
 
   visibility: visible;
   opacity: 1;
+}
+
+[data-tabs="parent"].tabs--no-js [data-tabs="content"] {
+  position: static;
+}
+
+[data-tabs="parent"].tabs--no-js [data-tabs="element"] {
+  position: relative;
+
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
 }

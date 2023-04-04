@@ -71,7 +71,7 @@
             </div>
           </div>
         </section>
-        <section class="subscriptions" data-tabs="parent">
+        <section class="subscriptions tabs tabs--no-js" data-tabs="parent">
           <div class="container">
             <h2>
               Абонементы
@@ -526,7 +526,7 @@
                     <img src="img/reviews/review-1-mobile.jpg" srcset="img/reviews/review-1-mobile@2x.jpg" width="80" height="80" alt="Анна Орлова">
                   </picture>
                   <b>Анна Орлова</b>
-                  <p>Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей</p>
+                  <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
                 </li>
                 <li class="reviews__list-item swiper-slide">
                   <picture>
@@ -536,7 +536,7 @@
                     <img src="img/reviews/review-1-mobile.jpg" srcset="img/reviews/review-1-mobile@2x.jpg" width="80" height="80" alt="Анна Орлова">
                   </picture>
                   <b>Анна Орлова</b>
-                  <p>Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей</p>
+                  <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
                 </li>
                 <li class="reviews__list-item swiper-slide">
                   <picture>
@@ -546,7 +546,7 @@
                     <img src="img/reviews/review-1-mobile.jpg" srcset="img/reviews/review-1-mobile@2x.jpg" width="80" height="80" alt="Анна Орлова">
                   </picture>
                   <b>Анна Орлова</b>
-                  <p>Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей</p>
+                  <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
                 </li>
               </ul>
               <div class="swiper-button-prev">
@@ -562,18 +562,18 @@
             </div>
           </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" data-form-validate="">
           <div class="container">
             <h2 class="visually-hidden">Контакты SUPERGYM</h2>
             <h3>Бесплатное занятие</h3>
-            <form class="contacts__form" action="">
-              <div class="custom-input">
+            <form class="contacts__form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+              <div class="custom-input" data-validate-type="text" data-on-input-validate="" data-required="">
                 <label for="name">Имя</label>
-                <input type="text" id="name" required="">
+                <input type="text" name="name" id="name" required="">
               </div>
-              <div class="custom-input">
+              <div class="custom-input" data-validate-type="phone" data-on-input-validate="" data-required="">
                 <label for="phone">Телефон</label>
-                <input type="tel" id="phone" required="">
+                <input type="tel" name="phone" id="phone" required="">
               </div>
               <button class="contacts__form-btn btn" type="submit">Oтправить</button>
             </form>
