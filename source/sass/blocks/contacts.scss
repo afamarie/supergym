@@ -8,10 +8,8 @@
     margin-bottom: 0;
     font-style: normal;
     font-family: $ff-highlight;
-    font-weight: 800;
     font-size: 54px;
     line-height: 84px;
-    text-align: center;
     letter-spacing: 0.03em;
   }
 
@@ -19,38 +17,85 @@
     background: initial;
 
     h3 {
-      text-align: left;
+      font-size: 42px;
+      line-height: 50px;
+    }
+  }
+
+  @include vp-767 {
+    h3 {
+      font-size: 32px;
+      line-height: 38px;
     }
   }
 }
 
 .contacts__action {
-  padding: 56px 170px 70px 0;
+  padding-top: 56px;
+  padding-right: clamp(48px, 12.4vw, 170px);
+  padding-bottom: 70px;
+  padding-left: 0;
   color: $color-default-white;
   background-color: $color-sapphire;
 
+  h3 {
+    font-weight: 800;
+  }
+
   @include vp-1199 {
     padding: 70px 163px 70px 133px;
+
+    h3 {
+      font-weight: 700;
+    }
+  }
+
+  @include vp-767 {
+    padding: 70px 15px;
+
+    h3 {
+      font-weight: 600;
+    }
   }
 }
 
 .contacts__address {
-  padding: 56px 0 70px 120px;
+  padding-top: 56px;
+  padding-left: clamp(48px, 8.8vw, 170px);
+  padding-bottom: 70px;
+  padding-right: 0;
+
+  h3 {
+    font-weight: 600;
+  }
 
   @include vp-1199 {
     padding: 70px 163px 70px 133px;
   }
+
+  @include vp-767 {
+    padding: 70px 15px;
+  }
 }
 
 .contacts__form {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
+
+  @include vp-1199 {
+    gap: 30px 60px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 }
 
 .contacts__form-btn {
   background-color: transparent;
-  flex: 1 0 100%;
+  grid-column: 1/-1;
 }
 
 .contacts__address-info {
@@ -75,6 +120,18 @@
     padding-bottom: 30px;
   }
 
+  @include vp-1199 {
+    dt {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    dd {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
   @include vp-767 {
     grid-template-columns: 1fr;
   }
@@ -84,6 +141,10 @@
   padding-right: 60px;
   border-right: 1px solid $color-light-slates-grey;
 
+  @include vp-1199 {
+    padding-right: 48px;
+  }
+
   @include vp-767 {
     padding-right: 0;
     border-right: none;
@@ -92,6 +153,10 @@
 
 .contacts__phone-email {
   padding-left: 60px;
+
+  @include vp-1199 {
+    padding-left: 48px;
+  }
 
   @include vp-767 {
     padding-left: 0;

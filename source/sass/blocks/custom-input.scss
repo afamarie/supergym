@@ -3,7 +3,7 @@
 
   display: flex;
   flex-direction: column;
-  flex: 1 1 190px;
+  flex: 1 1 100%;
 
   padding: 14px 0 28px;
 
@@ -34,8 +34,6 @@
   }
 
   input {
-    flex-grow: 1;
-    max-width: 190px;
     min-height: 44px;
     padding: 20px;
 
@@ -53,11 +51,12 @@
     }
 
     &:hover {
-      border-color: $color-light-slates-grey;
+      background-color: rgba($color-light-slates-grey, 0.3);
+      border-color: transparent;
     }
 
     &:focus {
-      background-color: rgba($color-light-slates-grey, 0.3);
+      background-color: rgba($color-light-slates-grey, 0.1);
       border-color: transparent;
     }
   }
