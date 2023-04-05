@@ -1,12 +1,16 @@
 import '../../vendor/swiper-bundle.min';
 import Swiper from '../../vendor/swiper-bundle.min';
 
-const swipers = document.querySelectorAll('.swiper');
-
-swipers.forEach((swiper) => {
-  swiper.classList.remove('swiper--no-js');
+const findSwipers = () => {
+  if (document.querySelector('.swiper') !== null) {
+    const swipers = document.querySelectorAll('.swiper');
+    swipers.forEach((swiper) => {
+      swiper.classList.remove('swiper--no-js');
+    });
+  } else {
+    return;
+  }
 }
-);
 
 const swiperPeople = new Swiper('.swiper--people', {
 
@@ -75,5 +79,7 @@ const swiperReviews  = new Swiper('.swiper--reviews ', {
 
   autoHeight: true,
 });
+
+findSwipers();
 
 export {swiperPeople, swiperReviews};

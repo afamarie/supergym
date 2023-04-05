@@ -6,10 +6,13 @@ export class Tabs {
   }
 
   _init() {
-    const parent = document.querySelector('.tabs');
-    parent.classList.remove('tabs--no-js');
     this._initAllTabs();
     document.addEventListener('click', this._documentClickHandler);
+
+    if (document.querySelector('.tabs') !== null) {
+      const parent = document.querySelector('.tabs');
+      parent.classList.remove('tabs--no-js');
+    }
   }
 
   _resizeObserver() {

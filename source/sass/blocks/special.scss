@@ -157,14 +157,14 @@
 }
 
 .special__figure {
-  p:nth-child(1) {
+  p {
     margin: 0;
     font-weight: 700;
     font-size: 28px;
     line-height: 32px;
   }
 
-  p:nth-child(2) {
+  b {
     margin: 0;
     font-weight: 700;
     font-size: clamp(28px, 5.12vw, 70px);

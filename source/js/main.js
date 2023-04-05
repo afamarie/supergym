@@ -2,7 +2,8 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {Tabs} from './modules/tabs/tabs';
 import './modules/sliders/sliders';
-import './modules/yt-player/yt-player'
+import './modules/yt-player/yt-player';
+import {initVideo} from './modules/yt-player/yt-player'
 
 // ---------------------------------
 
@@ -24,6 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     const tabs = new Tabs();
     window.tabs = tabs;
+    initVideo();
   });
 });
 
