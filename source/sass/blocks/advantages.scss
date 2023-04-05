@@ -88,18 +88,14 @@
   }
 
   &--side {
+    position: relative;
+    grid-column: -2/-1;
     grid-template-columns: min-content 1fr;
     grid-auto-rows: max-content max-content;
-  }
 
-  &--center > p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  &--side:nth-last-child(-n+2) {
-    position: relative;
+    &:nth-child(2n) {
+      grid-column: 1/2;
+    }
 
     &::after {
       position: absolute;
@@ -107,10 +103,20 @@
       height: 2px;
       width: 340px;
       left: 0;
-      top: -75px;
+      bottom: -75px;
       background-color: rgba($color-crimson, 0.2);
       content: "";
     }
+
+    &:nth-last-child(-n+2)::after {
+      display: none;
+    }
+  }
+
+  &--center > p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @include vp-1199 {
