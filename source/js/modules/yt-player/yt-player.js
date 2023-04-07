@@ -13,5 +13,3 @@ const initVideo = () => {
 }
 
 export {initVideo};
-
-

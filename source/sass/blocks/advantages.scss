@@ -46,8 +46,7 @@
   }
 
   @include vp-767 {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
     margin: 0 -15px;
     gap: 40px;
   }
@@ -141,10 +140,8 @@
       gap: 15px;
     }
 
-    &--side:not(:first-of-type):not(:nth-child(2)) {
-      &::after {
-        display: none;
-      }
+    &--side::after {
+      display: none;
     }
   }
 
@@ -170,6 +167,7 @@
       margin-top: 4px;
       margin-bottom: 8px;
       padding: 41px 74px 45px;
+      grid-row: 3/4;
     }
   }
 }

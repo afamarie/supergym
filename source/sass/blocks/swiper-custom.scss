@@ -65,7 +65,7 @@
   cursor: default;
 }
 
-.swiper-slide-prev {
-  visibility: collapse;
-  opacity: 0;
+.swiper-slide-prev:not(.swiper-slide-visible),
+.swiper-slide-next:not(.swiper-slide-visible) {
+  visibility: hidden;
 }

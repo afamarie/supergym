@@ -1,4 +1,5 @@
 .subscriptions {
+  position: relative;
   padding-top: 120px;
   padding-bottom: 160px;
   background: $color-ghost-white;
@@ -6,6 +7,24 @@
 
   h2 {
     padding-right: 4px;
+  }
+
+  &::after {
+    position: absolute;
+    display: inline-block;
+    width: 380px;
+    height: 330px;
+    right: 320px;
+    bottom: -70px;
+    content: "";
+    background-repeat: no-repeat;
+    background-image: image-set(
+      url("../img/backgrounds/weights.webp") 1x,
+      url("../img/backgrounds/weights.png") 1x,
+      url("../img/backgrounds/weights@2x.webp") 2x,
+      url("../img/backgrounds/weights@2x.png") 2x);
+    background-position: center;
+    z-index: 0;
   }
 
   @include vp-1199 {
@@ -16,11 +35,27 @@
       padding-bottom: 3px;
       padding-right: 14px;
     }
+
+    &::after {
+      width: 340px;
+      height: 385px;
+      right: -30px;
+      bottom: -90px;
+      background-image: image-set(
+        url("../img/backgrounds/weights-tablet.webp") 1x,
+        url("../img/backgrounds/weights-tablet.png") 1x,
+        url("../img/backgrounds/weights-tablet@2x.webp") 2x,
+        url("../img/backgrounds/weights-tablet@2x.png") 2x);
+    }
   }
 
   @include vp-767 {
     padding-top: 64px;
     padding-bottom: 100px;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -165,7 +200,11 @@
 
   b {
     position: absolute;
-    left: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
     bottom: 150px;
     font-weight: 700;
     font-size: 100px;
@@ -185,7 +224,6 @@
     padding-top: 56px;
 
     b {
-      left: 115px;
       bottom: 152px;
     }
   }
@@ -207,7 +245,6 @@
     }
 
     b {
-      left: 60px;
       bottom: 135px;
       font-size: clamp(80px, 25vw, 100px);
       line-height: 120px;
