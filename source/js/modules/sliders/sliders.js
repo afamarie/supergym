@@ -20,7 +20,7 @@ const swiperPeople = new Swiper('.swiper--people', {
   breakpoints: {
     1200: {
       slidesPerView: 4,
-      slidesPerGroup: 4,
+      slidesPerGroup: 1,
       spaceBetween: 40
     },
 
@@ -47,11 +47,6 @@ const swiperPeople = new Swiper('.swiper--people', {
     prevEl: '.swiper-button-prev',
   },
 
-  a11y: {
-    prevSlideMessage: 'Предыдущий слайд',
-    nextSlideMessage: 'Следующий слайд',
-  },
-
   autoHeight: true,
 });
 
@@ -70,11 +65,6 @@ const swiperReviews  = new Swiper('.swiper--reviews ', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  },
-
-  a11y: {
-    prevSlideMessage: 'Предыдущий слайд',
-    nextSlideMessage: 'Следующий слайд',
   },
 
   autoHeight: true,

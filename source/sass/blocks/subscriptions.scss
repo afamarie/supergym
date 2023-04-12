@@ -91,9 +91,12 @@
   border-bottom: 2px solid transparent;
   user-select: none;
   transition: all $trans-default;
+  color: rgba($color-sapphire, 0.5);
+  cursor: pointer;
 
   &.is-active {
     opacity: 1;
+    color: $color-sapphire;
     border-bottom: 2px solid $color-crimson;
   }
 

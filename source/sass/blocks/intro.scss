@@ -83,6 +83,7 @@
 .intro__media {
   position: relative;
   padding-top: 148px;
+  height: fit-content;
 
   img {
     margin-right: -103px;
@@ -113,6 +114,7 @@
 
 .intro__video-wrapper {
   position: absolute;
+  display: flex;
   width: max(266px, min(27vw, 364px));
   height: max(167px, min(17vw, 228px));
   left: -25%;
@@ -176,12 +178,11 @@
 }
 
 .intro__video-btn {
-  position: absolute;
+  position: relative;
   display: flex;
+  margin: auto;
   width: 72px;
   height: 72px;
-  top: 34%;
-  left: 40%;
   border-radius: 50%;
   background-image: linear-gradient(44.89deg, $color-dark-cerulean 25.38%, $color-venetian-red 74.89%);
   background-repeat: no-repeat;
@@ -231,11 +232,6 @@
       width: 72px;
       height: 72px;
     }
-  }
-
-  @include vp-767 {
-    top: 35%;
-    left: 42%;
   }
 }
 
