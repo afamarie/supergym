@@ -35,7 +35,6 @@
 
 .intro .container {
   display: flex;
-  padding-right: 0;
   justify-content: space-between;
 
   @include vp-1199 {
