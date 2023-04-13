@@ -60,14 +60,17 @@
 }
 
 .footer .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: minmax(391px, auto) 103px;
+  justify-items: stretch;
+  gap: 35px;
 
   @include vp-767 {
+    display: flex;
+    flex-direction: column;
     padding-top: 47px;
     padding-bottom: 30px;
-    flex-direction: column;
+    gap: 15px;
     align-items: flex-start;
   }
 }
