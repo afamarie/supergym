@@ -115,7 +115,8 @@
 
 .contacts__address-info {
   display: grid;
-  grid-template-columns: repeat(2, minmax(max-content, 170px));
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(60%, 170px));
   font-style: normal;
 
   @include vp-767 {
