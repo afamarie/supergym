@@ -1,17 +1,34 @@
-## Краткая инструкция по работе
+# Sypergym
 
-Для начала работы у вас должент быть установлен **Node.js** не ниже 16 версии
+Frontpage for gym. Prictice project as part of education at [HTML Academy](https://github.com/htmlonelove).
 
-### Основные команды для работы
+## Task and functionalities
+
+- HTML5, CSS3, progressive improvement
+- Responsive for 3 screen dimensions (mobile, tablet from 768px, desktop from 1200px)
+- Sass (SCSS) preprocessor
+- Cross-browser and cross-device (Chrome, Firefox, Safari)
+- BEM methodology
+- Tabs
+- Sliders
+- Form validation
+
+## Mockup
+
+[Figma](https://www.figma.com/file/bXwEMWnYsGLMIk8rZIbBoh/%D0%A4%D0%B8%D1%82%D0%BD%D0%B5%D1%81-%D1%86%D0%B5%D0%BD%D1%82%D1%80?node-id=0-1)
+
+## View Deployment
+
+[Sypergym](https://afamarie.github.io/supergym/build/)
+
+## Instruction
+
+**Node.js** from v.16 
 
 ```bash
-npm i # Установка
-npm start # Запуск локального сервера
-npm run build # Сборка проекта, минификация скриптов и оптимизация изображений перед деплоем на прод
-npm test # Запуск тестирования на соответствия кодгайдам
-npm run webp # Создание webp изображений в директории source
+npm i # Install
+npm start # Local server
+npm run build # Project build, minification of scripts and optimization of images before deployment to prod
+npm test # Test launch for compliance with code guides
+npm run webp # Webp creation in source directory
 ```
-
-### Вся разработка ведётся в директории `source`
-
-### Итоговый код попадает в директорию `build`
