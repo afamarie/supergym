@@ -1,4 +1,4 @@
-# Sypergym
+# 🏋️Sypergym
 
 Frontpage for gym. Prictice project as part of education at [HTML Academy](https://github.com/htmlonelove).
 
